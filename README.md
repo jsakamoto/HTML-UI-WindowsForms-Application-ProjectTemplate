@@ -13,6 +13,8 @@ Entire of main form is covered by Web browser component, and the application pro
 
 The sample appication zip archived can download [here](releases/download/1st-commit/HTMLUIWinFormsApp.Sample.-.Tiny.Text.Editor.zip).
 
+![movie - tiny text editor sample app](.contents/fig01-sampleapp.gif)
+
 ## license
 
 [MIT license](LICENSE)
