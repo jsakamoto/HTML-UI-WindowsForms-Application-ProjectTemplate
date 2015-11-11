@@ -1,0 +1,97 @@
+﻿body, div, a, textarea {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Roboto, 'Droid Sans', sans-serif;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#tool-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 62px;
+    background-color: #eee;
+    padding: 8px 0 0 4px;
+    font-size: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+    #tool-bar .tool-btn {
+        border: solid 1px #aaa;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        margin-right: 4px;
+        font-size: 12px;
+        text-align: center;
+        overflow: hidden;
+        line-height: 78px;
+        background-position: center 2px;
+        background-repeat: no-repeat;
+        cursor: default;
+        background-color: #eee;
+    }
+
+        #tool-bar .tool-btn:hover {
+            background-color: #f8f8f8;
+        }
+
+    #tool-bar #btn-open.tool-btn {
+        background-image: url(images/OpenHH.png);
+    }
+
+    #tool-bar #btn-save.tool-btn {
+        background-image: url(images/SaveHH.png);
+    }
+
+#body {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+}
+
+    #body textarea {
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        padding: 0;
+        font-family: Consolas, monospace;
+        font-size: 14px;
+        border: inset 2px #fff;
+        padding: 10px;
+    }
+
+#status-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 32px;
+    line-height: 32px;
+    background-color: #eee;
+    font-size: 14px;
+    padding: 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+}
