@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http;
 using Microsoft.Owin;
 using Microsoft.Owin.FileSystems;
 using Microsoft.Owin.StaticFiles;
@@ -18,16 +19,10 @@ namespace HTMLUIWinFormsApp.Web
         {
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
 
-            // If you want to enable ASP.NET Web API:
-            // 1) Install Microsoft.AspNet.WebApi.Owin NuGet package. (ex."PM> Install-Package Microsoft.AspNet.WebApi.Owin")
-            // 2) Import "System.Web.Http" namespace. (insert "using System.Web.Http;" at head of this file)
-            // 3) Uncomment lines below.
-            // After this, you can implement API controllers with attribute routing.
-
-            //// Confiure ASP.NET Web API
-            //var config = new HttpConfiguration();
-            //config.MapHttpAttributeRoutes();
-            //app.UseWebApi(config);
+            // Confiure ASP.NET Web API
+            var config = new HttpConfiguration();
+            config.MapHttpAttributeRoutes();
+            app.UseWebApi(config);
 
             // Configure OWIN Static Files middleware to provide contents from embedded resources.
             var appSettings = ConfigurationManager.AppSettings;
